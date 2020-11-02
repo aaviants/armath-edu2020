@@ -2,6 +2,57 @@
 
 int main()
 {
+	// homework 3 Lesson 2
+	{
+		int N;
+		std::cout << "Input N: ";
+		std::cin >> N;
+
+		int S = 0, int prevNum = 0;								// S = 1 + 11 + 111
+		for (int i = 1; i <= N; i++)
+		{
+			int newNum = prevNum * 10 + 1;
+			S += newNum;
+			prevNum = newNum;
+		}
+		std::cout << S << std::endl;
+	}
+
+	// homework 3 Lesson 4
+	{
+		int N;		// 10221
+		std::cout << "Input N: ";
+		std::cin >> N;
+
+		int d0 = 0, d1 = 0, d2 = 0, d3 = 0, d4 = 0, d5 = 0, d6 = 0, d7 = 0, d8 = 0, d9 = 0;
+
+		while (N != 0)
+		{
+			int digit = N % 10;
+			N /= 10;
+
+			switch (digit)
+			{
+			case 0:
+				d0++;
+				break;
+			case 1:
+				d1++;
+				break;
+			case 2:
+				d2++;
+				break;
+			}
+		}
+
+		if (d0 != 0)
+			std::cout << "The frequency of 0-s is " << d0 << std::endl;
+		if (d1 != 0)
+			std::cout << "The frequency of 1-s is " << d1 << std::endl;
+		if (d2 != 0)
+			std::cout << "The frequency of 2-s is " << d2 << std::endl;
+	}
+
 	// iteration by while loop
 	{
 		int i = 0;
