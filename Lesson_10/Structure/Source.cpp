@@ -104,7 +104,7 @@ void modify_the_book(Book* book)
 
 	//book.language = 'f';				// wrong
 	book->language.code = 'f';			// better
-	book->language.displayName = "franch";
+	book->language.displayName = "french";
 }
 
 void f()
@@ -136,7 +136,7 @@ int main()
 
 
 	short year = 1997;
-	std::string author = "Straustroop";
+	std::string author = "Stroustrup";
 	int pages = 800;
 	char lang = 'e';
 	print(year, author, pages, lang);
@@ -156,7 +156,7 @@ int main()
 
 	Book book1;
 	book1.year = 1997;
-	book1.author = "Straustroop";
+	book1.author = "Stroustrup";
 	book1.pages = 800;
 	book1.language = en;
 	print(book1);
