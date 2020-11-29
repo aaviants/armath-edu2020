@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8cdae381-e31a-41fc-accd-7e4d25c57afd}</ProjectGuid>
-    <RootNamespace>FlowControls</RootNamespace>
+    <ProjectGuid>{e9efaec3-1226-476a-ac82-517ec06f265c}</ProjectGuid>
+    <RootNamespace>Functions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Lesson02_FlowControls</ProjectName>
+    <ProjectName>Lesson05_Functions2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

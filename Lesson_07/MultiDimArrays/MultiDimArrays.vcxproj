@@ -24,6 +24,7 @@
     <ProjectGuid>{76e468ce-d7dd-4534-ac0d-932bc31e5087}</ProjectGuid>
     <RootNamespace>MultiDimArrays</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Lesson07_MultiDimArrays</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

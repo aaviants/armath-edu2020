@@ -8,7 +8,7 @@ int main()
 		std::cout << "Input N: ";
 		std::cin >> N;
 
-		int S = 0, int prevNum = 0;								// S = 1 + 11 + 111
+		int S = 0, prevNum = 0;								// S = 1 + 11 + 111
 		for (int i = 1; i <= N; i++)
 		{
 			int newNum = prevNum * 10 + 1;

@@ -45,7 +45,7 @@ int main()
 
 	
 	float f = 1.5;
-	float g = 50.2;
+	float g = 50.2f;
 
 	g += f;
 

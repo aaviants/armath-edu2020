@@ -11,8 +11,7 @@ int func()
 
 int main()
 {
-	double num = pow(10, 3);		// 10 ^ 3
-	10 * 10 * 10
+	double num = pow(10, 3);		// 10 ^ 3 = 10 * 10 * 10
 
 	// a & b
 	// 1 - a+b

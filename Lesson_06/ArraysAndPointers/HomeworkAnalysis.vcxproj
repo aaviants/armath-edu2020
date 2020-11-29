@@ -24,7 +24,7 @@
     <ProjectGuid>{005134cd-8b6e-4ffc-9b88-97c0ae48ca9b}</ProjectGuid>
     <RootNamespace>HomeworkAnalysis</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>ArraysAndPointers</ProjectName>
+    <ProjectName>Lesson06_ArraysAndPointers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
