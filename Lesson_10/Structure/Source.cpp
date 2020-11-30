@@ -39,6 +39,7 @@ struct Book
 {
 	short year;
 	std::string author;
+	std::string title;
 	int pages;
 
 	Lang language;
@@ -194,4 +195,71 @@ int main()
 	print(book2);
 
 	return 0;
+}
+
+
+struct Rect
+{
+	point topLeft;
+	point bottomRight;
+	// double area;
+};
+
+struct Triangle
+{
+	point point1;
+	point point2;
+	point point3;
+	// double area;
+};
+
+struct Circle
+{
+	point center;
+	double readius;
+	// double area;
+};
+
+Rect inputRectanle()
+{
+	Rect rc = {};
+
+	// cout << "Input rectangle left coordinate: "
+	// cin >> 
+	return rc;
+}
+
+double calculate_area(Rect rc)
+{
+	return (rc.bottomRight.x - rc.topLeft.x) * (rc.bottomRight.y - rc.topLeft.y);
+}
+
+double calculate_area(Triangle tri)
+{
+	return 10;
+}
+
+double calculate_area(Circle circle)
+{
+	return 3.14 * circle.readius * circle.readius;
+}
+
+void area_calculator()
+{
+	point pt1 = { 10, 20 };
+	point pt2 = { 50, 100 };
+
+	Rect rc = {};
+	rc.topLeft = pt1;
+	rc.bottomRight = pt2;
+	//rc.area = 3200;
+
+	Circle c = {};
+
+	Triangle tr = {};
+
+
+
+	double areaRect = calculate_area(rc);
+	double areaCirc = calculate_area(c);
 }
