@@ -62,10 +62,19 @@ int main()
 		std::cout << "rectangle height is " << rc.getHeight() << std::endl;
 		std::cout << "rectangle area is " << rc.area() << std::endl;
 
-		Rectangle* rectangles = new Rectangle[5];
+		Rectangle* rectangles = new Rectangle[3];
+		rectangles[0].setWidth(10);
+		rectangles[0].setHeight(15);
+		rectangles[1].setWidth(11);
+		rectangles[1].setHeight(16);
+		rectangles[2].setWidth(12);
+		rectangles[2].setHeight(17);
 		delete[] rectangles;
 
 		Rectangle rc2(5, 2);
+
+		rc2.setWidth(14);
+
 		std::cout << "rectangle width is " << rc2.getWidth() << std::endl;
 		std::cout << "rectangle height is " << rc2.getHeight() << std::endl;
 		std::cout << "rectangle area is " << rc2.area() << std::endl;

@@ -6,6 +6,8 @@ private:
 	int width;
 	int height;
 
+	int _area;
+
 public:
 	Rectangle()
 	{
@@ -13,6 +15,7 @@ public:
 
 		width = 0;
 		height = 0;
+		_area = 0;
 	}
 	Rectangle(int x, int y)
 	{
@@ -20,6 +23,7 @@ public:
 
 		width = x;
 		height = y;
+		_area = width * height;
 	}
 
 	void setWidth(int x)
@@ -32,6 +36,8 @@ public:
 
 		int old_width = width;
 		width = x;
+		_area = width * height;
+
 		std::cout << "Width has changed from " << old_width << " to " << width << std::endl;
 	}
 	int getWidth()
@@ -49,6 +55,8 @@ public:
 
 		int old_height = height;
 		height = y;
+		_area = width * height;
+
 		std::cout << "Height has changed from " << old_height << " to " << height << std::endl;
 	}
 	int getHeight()
@@ -60,10 +68,13 @@ public:
 	{
 		setWidth(x);
 		setHeight(y);
+
+		//area = width * height;
 	}
 
 	int area()
 	{
-		return width * height;
+		return _area;
+		//return width * height;
 	}
 };
