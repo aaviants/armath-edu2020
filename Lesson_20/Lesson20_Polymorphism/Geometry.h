@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 using byte = unsigned char;
 
 struct Point
@@ -39,21 +41,34 @@ private:
 
 	Color fillColor;
 	Color borderColor;
-	int borderWith;
+	int borderWeight;
 
 public:
 	Shape() :
 		fillColor(255, 255, 255),
 		borderColor(0, 0, 0),
-		borderWith(1)
+		borderWeight(1)
 	{
+		std::cout << "Shape created" << std::endl;
+	}
+	virtual ~Shape()
+	{
+		std::cout << "Shape destroyed" << std::endl;
 	}
 
 	void setFillColor(Color value) { fillColor = value; }
 	void setBorderColor(Color value) { borderColor = value; }
-	void setBorderWeight(int value) { borderWith = value; }
+	void setBorderWeight(int value) { borderWeight = value; }
 
 	Color getFillColor() { return fillColor; }
 	Color getBorderColor() { return borderColor; }
-	int getBorderWeight() { return borderWith; }
+	int getBorderWeight() { return borderWeight; }
+
+	virtual Point getCenterOfGravity() = 0;
+	virtual Boundary getBoundingRect() = 0;
+	virtual double getArea() = 0;
+
+	//Point getCenterOfGravity() { return Point(0, 0); }
+	//Boundary getBoundingRect() { return Boundary(Point(0, 0), Point(0, 0)); }
+	//double getArea() { return 18; }
 };

@@ -12,12 +12,18 @@ public:
 	Circle() :
 		radius(0)
 	{
-	};
+		std::cout << "Circle created" << std::endl;
+	}
 	Circle(Point c, double r) :
 		center(c),
 		radius(r)
 	{
-	};
+		std::cout << "Circle created" << std::endl;
+	}
+	~Circle()
+	{
+		std::cout << "Circle destroyed" << std::endl;
+	}
 
 	void setCenter(Point value) { center = value; }
 	void setRadius(double value) { radius = value; }

@@ -12,13 +12,19 @@ private:
 public:
 	Triangle()
 	{
-	};
+		std::cout << "Triangle created" << std::endl;
+	}
 	Triangle(Point p1, Point p2, Point p3) :
 		pt1(p1),
 		pt2(p2),
 		pt3(p3)
 	{
-	};
+		std::cout << "Triangle created" << std::endl;
+	}
+	~Triangle()
+	{
+		std::cout << "Triangle destroyed" << std::endl;
+	}
 
 	void setPoint1(Point value) { pt1 = value; }
 	void setPoint2(Point value) { pt2 = value; }

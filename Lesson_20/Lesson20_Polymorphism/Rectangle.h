@@ -2,46 +2,33 @@
 
 #include "Geometry.h"
 
-class Rectangle
+class Rectangle : public Shape
 {
 private:
 	Point topLeft;
 	Point bottomRight;
 
-	Color fillColor;
-	Color borderColor;
-	int borderWith;
-
 public:
-	Rectangle() :
-		fillColor(255, 255, 255),
-		borderColor(0, 0, 0),
-		borderWith(1)
+	Rectangle()
 	{
-	};
+		std::cout << "Rectangle created" << std::endl;
+	}
 	Rectangle(Point tl, Point br) :
 		topLeft(tl),
-		bottomRight(br),
-
-		fillColor(255, 255, 255),
-		borderColor(0, 0, 0),
-		borderWith(1)
+		bottomRight(br)
 	{
-	};
+		std::cout << "Rectangle created" << std::endl;
+	}
+	~Rectangle()
+	{
+		std::cout << "Rectangle destroyed" << std::endl;
+	}
 
 	void setTopLeft(Point value) { topLeft = value; }
 	void setBottomRight(Point value) { bottomRight = value; }
 
 	Point getTopLeft() { return topLeft; }
 	Point getBottomRight() { return bottomRight; }
-
-	void setFillColor(Color value) { fillColor = value; }
-	void setBorderColor(Color value) { borderColor = value; }
-	void setBorderWeight(int value) { borderWith = value; }
-
-	Color getFillColor() { return fillColor; }
-	Color getBorderColor() { return borderColor; }
-	int getBorderWeight() { return borderWith; }
 
 	Point getCenterOfGravity() { return Point((topLeft.x + bottomRight.x) / 2, (topLeft.y + bottomRight.y) / 2); }
 	Boundary getBoundingRect() { return Boundary(topLeft, bottomRight); }
